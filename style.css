@@ -1,0 +1,218 @@
+body {
+    background-color: #042950; 
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* Classe para destacar texto em laranja */
+.destaque {
+    color: #f7ad19;          
+    font-weight: bold;
+}
+
+/* Título de boas-vindas principal */
+.bem_vindo {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+}
+
+/* Título da caixa de login/cadastro */
+.titulo {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Subtítulo da página de cadastro */
+.subtitulo {
+    text-align: center;
+    color: #042950;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* Caixa principal que contém o formulário de login */
+.box-login {
+    max-width: 380px;    
+    margin: 40px auto;    
+    background: #b4cce0;   
+    border-radius: 16px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================================
+   FORMULÁRIO DE LOGIN
+   ================================ */
+
+/* Container do formulário */
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Estilo dos labels */
+.form label {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem;
+    color: #042950;           
+    margin-bottom: 8px;
+    margin-top: 20px;          
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Remove espaçamento superior do primeiro label */
+.form label:first-of-type {
+    margin-top: 8px;
+}
+
+/* Botão principal do formulário */
+.form button {
+    width: 100%;
+    padding: 16px;
+    background-color: #042950;  
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;  
+}
+
+/* Efeito hover do botão */
+.form button:hover {
+    background-color: #195a9b;   
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 41, 80, 0.3); 
+}
+
+/* Container do link de cadastro */
+.cadastro-link {
+    text-align: center;
+    margin-top: 16px;
+    color: #042950;
+    font-size: 0.9rem;
+}
+
+/* Estilo do link "Cadastre-se aqui" */
+.link-cadastro {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito hover do link de cadastro */
+.link-cadastro:hover {
+    text-decoration: underline;
+}
+
+/* Container que engloba o input e o ícone */
+.input-icon {
+    position: relative;       
+    width: 100%;
+    margin-bottom: 16px;    
+}
+
+/* Remove espaçamento inferior do campo de senha para colar as opções */
+.input-icon:last-of-type {
+    margin-bottom: 0;           
+}
+
+/* Ícones dentro dos inputs (envelope, cadeado, etc.) */
+.input-icon i {
+    position: absolute;         
+    left: 16px;               
+    top: 50%;                   
+    transform: translateY(-50%);
+    color: #999;              
+    font-size: 1rem;
+}
+
+/* Campos de input (email, senha) */
+.input-icon input {
+    width: 100%;
+    padding: 14px 16px 14px 48px; 
+    border: 2px solid #ddd;        
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+    box-sizing: border-box;         
+    background-color: #fff;
+    color: #999;                    
+}
+
+/* Estado de foco dos inputs */
+.input-icon input:focus {
+    outline: none;                  
+    border-color: #042950;          
+    box-shadow: 0 0 8px rgba(4, 41, 80, 0.2); 
+    color: #042950;                
+}
+
+
+.input-icon input:focus + i {
+    color: #042950;                 
+}
+
+/* Estilo dos placeholders */
+.input-icon input::placeholder {
+    color: #999;                 
+    font-weight: normal;
+}
+
+
+.form-options {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    margin: 8px 0 20px 0;         
+    font-size: 0.9rem;           
+}
+
+/* Label do checkbox "Lembre-me" */
+.form-options label {
+    display: flex;
+    align-items: center;          
+    gap: 8px;                    
+    color: black;
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin: 0;                     
+}
+
+/* Checkbox personalizado */
+.form-options input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: black;           
+}
+
+/* Link "Esqueceu a senha?" */
+.form-options a {
+    color: black;
+    text-decoration: none;        
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Efeito hover do link "Esqueceu a senha?" */
+.form-options a:hover {
+    text-decoration: underline;   
+}

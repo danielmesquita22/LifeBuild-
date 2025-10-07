@@ -1,0 +1,77 @@
+.bem_vindo {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+}
+.titulo{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+    margin-top: -10px;
+}
+
+.destaque {
+    color: #f7ad19;
+    font-weight: bold;
+}
+body{
+    background-color: #042950;
+    font-family: "Red Hat Display", sans-serif;
+}
+.subtitulo{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: black;
+}
+.box-login {
+    max-width: 340px;
+    margin: 40px auto;
+    background: #b4cce0;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0002;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.1rem;
+    color: #042950;
+    font-weight: bold;
+    align-self: flex-start;
+}
+.form input{
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Red Hat Display", sans-serif; 
+    cursor: pointer;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #042950;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: "Red Hat Display", sans-serif; 
+    cursor: pointer;
+    margin-top: 16px;
+}
+.form button:hover {
+    background-color: #195a9b;
+    transform: scale(1.05);
+    transition: background 0.2s, transform 0.2s;
+}
