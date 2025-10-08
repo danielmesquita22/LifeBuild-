@@ -1,0 +1,140 @@
+  <!doctype html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rotinas</title>
+    <meta name="description" content="App de rotinas com visual inspirado no Asana, feito com HTML, CSS e JS separados." />
+    <link rel="stylesheet" href="Config.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="app" data-layout="with-sidebar" data-theme="light">
+
+          <header class="topbar" role="banner">
+            <button class="btn icon only" aria-label="Alternar menu" id="btnToggleSidebar" title="Abrir/fechar menu">
+              <span class="icon" aria-hidden="true">☰</span>
+            </button>
+
+            <a href="inicio.html" class="brand" aria-label="Página inicial">
+              <span class="brand-mark" aria-hidden="true">✔</span>
+              <span class="brand-name">Life build</span>
+            </a>
+
+            <div class="spacer"></div>
+              <div class="now" aria-live="polite">
+                <span id="todayDate" class="date">--/--/----</span>
+                <span id="nowTime" class="time">--:--</span>
+            </div>
+
+        </header>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" role="navigation" aria-label="Menu de navegação">
+        
+        <div>
+       
+          <main class="profile-container">
+            <section class="profile-header">
+              <div class="profile-banner"></div>
+                  <h1>Meu perfil</h1>
+                      <img src="img/Ryo.jpg" alt="Foto do perfil" class="profile-photo" />
+                      <input type="file" id="profilePhotoInput" accept="image/*" style="display:none;" />
+                <div class="profile-info">
+                  <button class="btn edit-profile">Editar perfil de usuário</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="account-info">
+              <div class="info-item">
+                <label>Nome exibido</label>
+                <div class="info-field">
+                  <span>Carlos</span>
+                  <button class="edit-btn">Editar</button>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <label>Nome de usuário</label>
+                <div class="info-field">
+                  <span>onror</span>
+                  <button class="edit-btn">Editar</button>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <label>E-mail</label>
+                <div class="info-field">
+                  <span>*****************@gmail.com</span>
+                  <a href="#" class="link">Mostrar</a>
+                </div>
+              </div>
+
+            </section>
+          </main>
+
+        <h1 class="config-title">Configuração</h1>
+        <div class="config-option">
+          <label>Ativar notificações do navegador
+            <span style="float:right;">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </span>
+          </label>
+        </div>
+
+        <div class="config-option">
+          <label>Trocar modo
+            <span style="float:right;">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </span>
+          </label>
+        </div>
+
+        <div class="config-option">
+          <label for="appLanguage">Idioma do aplicativo
+            <span style="float:right;">
+              <select id="appLanguage">
+                <option value="pt-BR">Português</option>
+                <option value="en-US">Inglês</option>
+              </select>
+            </span>
+          </label>
+        </div>
+
+        <div class="config-option">
+          <label for="fontFamily">Fonte personalizada
+            <span style="float:right;">
+              <select id="fontFamily">
+                <option value="Inter">Inter</option>
+                <option value="Arial">Arial</option>
+                <option value="Roboto">Roboto</option>
+              </select>
+            </span>
+          </label>
+        </div>
+
+        <div class="config-option">
+          <label for="fontSize">Tamanho da fonte
+            <span style="float:right;">
+              <input type="range" id="fontSize" min="12" max="24" value="16" />
+            </span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary">Salvar Configurações</button>
+          <button class="btn secondary">Restaurar Padrões</button>
+        </div>
+      </aside>
+    </div>
+  </body>
+  </html>
